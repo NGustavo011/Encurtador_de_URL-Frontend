@@ -25,6 +25,7 @@ export const Title = styled.h1`
 `
 
 export const Description = styled.h2`
+    text-align: justify;
 `
 
 export const FormWrapper = styled.div`
