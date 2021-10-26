@@ -16,8 +16,8 @@ export const FormURL = styled.form`
 `
 
 export const InputURL = styled.input`
-    width: 80rem;
-    height: 4rem;
+    width: 80vw;
+    height: 4vh;
     padding: 25px;
     border-radius: 15px;
     font-size: 30px;
@@ -25,9 +25,9 @@ export const InputURL = styled.input`
 
 export const ButtonURL = styled.button`
     font-weight: bold;
-    height: 7.5rem;
-    width: 15rem;
-    font-size: 35px;
+    height: 10vh;
+    width: 15vw;
+    font-size: 32px;
     border-radius: 15px;
     margin-top: 40px;
     cursor: pointer;

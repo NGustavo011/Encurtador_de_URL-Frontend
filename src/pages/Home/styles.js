@@ -29,5 +29,4 @@ export const Description = styled.h2`
 `
 
 export const FormWrapper = styled.div`
-    margin-top: 60px;
 `
