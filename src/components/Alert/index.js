@@ -20,10 +20,8 @@ const Alert = ( {children} ) => {
                     {children}
                 </S.NewURL>
                 {!copied
-                ?
-                    <S.ClipboardIconNotCopied icon={faClipboardCheck} onClick={copyToClipboard} /> 
-                :
-                    <S.ClipboardIconCopied icon={faClipboardCheck} /> 
+                    ?<S.ClipboardIconNotCopied icon={faClipboardCheck} onClick={copyToClipboard} /> 
+                    :<S.ClipboardIconCopied icon={faClipboardCheck} /> 
                 }
                 
             </S.Content>

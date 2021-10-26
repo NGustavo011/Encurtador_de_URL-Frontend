@@ -27,11 +27,14 @@ const Form = () => {
     const onSubmit = async (data) => {
         const { URL } = data;
         const newURL = await generateURL(URL);
-        return MySwal.fire(
-            <Alert>
-                {newURL}
-            </Alert>
-        )
+
+        MySwal.fire(
+            {
+                icon: 'success',
+                confirmButtonColor: 'DarkSeaGreen',
+                html: <Alert> { newURL } </Alert>
+            })
+          
     };
 
     return(

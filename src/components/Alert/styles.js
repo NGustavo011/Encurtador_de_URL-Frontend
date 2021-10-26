@@ -36,6 +36,5 @@ export const ClipboardIconCopied = styled(FontAwesomeIcon)`
     color: green;
     font-size: 40px;
     margin: 20px 0px 40px 0px;
-    transition: 1s ease-out;
     transform: scale(1.1);
 `
