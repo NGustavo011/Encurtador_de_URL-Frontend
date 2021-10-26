@@ -12,15 +12,18 @@ const Form = () => {
                 `shorten`,{
                     originURL,
             })
+            if(response.data.newURL)
+                return response.data.newURL.shortURL;
+            return response.data.shortURL;
         } catch(error) {
             console.log(error);
         }
     }
 
     const onSubmit = async (data) => {
-        const { url } = data;
-        generateURL(url);
-        
+        const { URL } = data;
+        const newURL = await generateURL(URL);
+        alert(newURL);
       };
 
     return(
@@ -29,7 +32,7 @@ const Form = () => {
                 <S.InputURL 
                     placeholder="Digite a url que deseja encurtar"
                     required
-                    {...register('url', { required: true})}
+                    {...register('URL', { required: true})}
                  />
                 <S.ButtonURL>ENCURTAR</S.ButtonURL>
             </S.FormURL>
