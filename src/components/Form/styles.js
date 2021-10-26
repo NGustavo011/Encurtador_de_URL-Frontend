@@ -34,7 +34,7 @@ export const ButtonURL = styled.button`
     &:hover {
         background-color: #96C17F;
         transition: 1s ease-out;
-      }
-      transition: 1s ease-out;
-      background-color: #B5F990;
+    }
+    transition: 1s ease-out;
+    background-color: #B5F990;
 `

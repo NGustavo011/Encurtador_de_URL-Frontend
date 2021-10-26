@@ -1,10 +1,14 @@
 import React from 'react';
 import * as S from './styles';
 import { useForm } from 'react-hook-form';
-import api from '../../services/api'
+import api from '../../services/api';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import Alert from '../Alert'
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
+    const MySwal = withReactContent(Swal);
 
     const generateURL = async (originURL) =>{
         try{
@@ -23,8 +27,12 @@ const Form = () => {
     const onSubmit = async (data) => {
         const { URL } = data;
         const newURL = await generateURL(URL);
-        alert(newURL);
-      };
+        return MySwal.fire(
+            <Alert>
+                {newURL}
+            </Alert>
+        )
+    };
 
     return(
         <S.Wrapper>
