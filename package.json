@@ -1,6 +1,7 @@
 {
   "name": "encurtador_de_url-frontend",
   "version": "0.1.0",
+  "homepage": "Encurtador_de_URL-Frontend/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
