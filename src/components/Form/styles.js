@@ -38,3 +38,9 @@ export const ButtonURL = styled.button`
     transition: 1s ease-out;
     background-color: #B5F990;
 `
+
+export const ButtonTextSpan = styled.span`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`

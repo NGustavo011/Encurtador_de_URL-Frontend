@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from './styles';
 import { useForm } from 'react-hook-form';
 import api from '../../services/api';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import Alert from '../Alert'
+import Alert from '../Alert';
+import ReactLoading from 'react-loading';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
+    const [isLoading, setIsLoading] = useState(false);
     const MySwal = withReactContent(Swal);
 
     const generateURL = async (originURL) =>{
@@ -26,15 +28,17 @@ const Form = () => {
 
     const onSubmit = async (data) => {
         const { URL } = data;
+        
+        setIsLoading(true);
         const newURL = await generateURL(URL);
 
+        setIsLoading(false);
         MySwal.fire(
             {
                 icon: 'success',
                 confirmButtonColor: 'DarkSeaGreen',
-                html: <Alert> { newURL } </Alert>
+                html: <Alert>{newURL}</Alert>
             })
-          
     };
 
     return(
@@ -45,7 +49,15 @@ const Form = () => {
                     required
                     {...register('URL', { required: true})}
                  />
-                <S.ButtonURL>ENCURTAR</S.ButtonURL>
+                <S.ButtonURL>{
+                        isLoading?(
+                            <S.ButtonTextSpan><ReactLoading type={"spin"} color={"black"} height={50} width={50} /></S.ButtonTextSpan>
+                        ):(
+                            <S.ButtonTextSpan>ENCURTAR</S.ButtonTextSpan>
+                        )
+                    }
+                </S.ButtonURL>
+                
             </S.FormURL>
         </S.Wrapper>
     );
