@@ -1,7 +1,6 @@
 {
   "name": "encurtador_de_url-frontend",
   "version": "0.1.0",
-  "homepage": "https://ngustavo011.github.io/Encurtador_de_URL-Frontend/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -23,8 +22,6 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "node server.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
@@ -48,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }

@@ -1,6 +1,6 @@
-import express from 'express';
+const express = require('express');
 
-import { resolve } from 'path';
+const { resolve } = require('path');
 
 const app = express();
 
