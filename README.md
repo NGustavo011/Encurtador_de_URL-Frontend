@@ -3,8 +3,14 @@
 ### Descrição 📄
 
 O projeto desenvolvido representa o front-end de uma aplicação de encurtador de url.
-Com o encurtador é possível diminuir o tamanho do link criando uma url curta para compartilhar as mesmas.
+Com o encurtador é possível diminuir o tamanho de um link criando uma url curta para o compartilhamento.
 O desenvolvimento foi focado no uso do React, e só foi possível graças a ajuda da Digital Innovation One e Aléxia Pereira.
+
+### Adições/Alterações :heavy_plus_sign:
+
+As adições/alterações feitas em relação ao projeto desenvolvido pela Aléxia Pereira são:
+
+- Adição do front-end funcional e prático.
 
 ### Como executar na minha máquina? 🧑‍🔧
 
