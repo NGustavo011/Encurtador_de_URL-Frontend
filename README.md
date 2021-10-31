@@ -26,5 +26,5 @@ https://github.com/NGustavo011/sobre-mim
 
 ### Back-end 🗃️
 
-GitHub: https://github.com/NGustavo011/Encurtador_de_URL-Backend
-Heroku: https://encurtador-de-url-backend.herokuapp.com/
+- GitHub: https://github.com/NGustavo011/Encurtador_de_URL-Backend
+- Heroku: https://encurtador-de-url-backend.herokuapp.com/
