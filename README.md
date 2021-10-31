@@ -4,7 +4,7 @@
 
 O projeto desenvolvido representa o front-end de uma aplicação de encurtador de url.
 Com o encurtador é possível diminuir o tamanho do link criando uma url curta para compartilhar as mesmas.
-O desenvolvimento foi focado no uso do React, e só foi possível graças a ajuda da Digital Innovation One e Matheus Benites.
+O desenvolvimento foi focado no uso do React, e só foi possível graças a ajuda da Digital Innovation One e Aléxia Pereira.
 
 ### Como executar na minha máquina? 🧑‍🔧
 
